@@ -23,7 +23,6 @@ func init() {
 	// r.GET("/form/:name", handleLogin)
 	// r.POST("/api/:name", handlepath)
 	// r.GET("/api/:name", handleLogout)
-
 	http.Handle("/favicon.ico", http.NotFoundHandler())
 	http.Handle("/public/", http.StripPrefix("/public", http.FileServer(http.Dir("public/"))))
 	tpl = template.Must(template.ParseGlob("templates/html/*.html"))
